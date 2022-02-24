@@ -19,8 +19,8 @@ The day/night cycle of the visual comfort was generated using [Ultra Dynamic Sky
 ## Ontologies
 The related ontology (work-in-progress) is available from:
 
-- https://i-lab.aegean.gr/kotis/Ontologies/DTonto/SEC4DigiT-v1.owl
-- https://i-lab.aegean.gr/kotis/Ontologies/DTonto/SEC4DigiT%20ontology.htm
+- https://i-lab.aegean.gr/kotis/Ontologies/Sec4DigiT/SEC4DigiT-v1.owl
+- https://i-lab.aegean.gr/kotis/Ontologies/Sec4DigiT/SEC4DigiT.htm
 
 
 Developed with Unreal Engine 4 - version 4.26.
