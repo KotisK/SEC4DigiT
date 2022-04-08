@@ -26,7 +26,7 @@ The related ontology (work-in-progress) is available from:
 
 - https://i-lab.aegean.gr/kotis/Ontologies/Sec4DigiT/SEC4DigiT-v1.1.owl (incorporating feedback provided from review of our ESWC position paper)
 - https://i-lab.aegean.gr/kotis/Ontologies/Sec4DigiT/SEC4DigiT-v1.owl
-- https://i-lab.aegean.gr/kotis/Ontologies/Sec4DigiT/SEC4DigiT.htm
+- https://i-lab.aegean.gr/kotis/Ontologies/Sec4DigiT/Sec4DigiT.htm
 
 Developed with Protege 5.5 (in OWL).
 
