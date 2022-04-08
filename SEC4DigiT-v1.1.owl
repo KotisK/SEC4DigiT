@@ -1,0 +1,623 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://i-lab.aegean.gr/kotis/ontologies/sec4digit"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://i-lab.aegean.gr/kotis/ontologies/sec4digit"
+     versionIRI="http://i-lab.aegean.gr/kotis/ontologies/sec4digit/1.1.0">
+    <Prefix name="" IRI="http://i-lab.aegean.gr/kotis/ontologies/sec4digit"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="ssn" IRI="http://www.w3.org/ns/ssn/"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="sosa" IRI="http://www.w3.org/ns/sosa/"/>
+    <Prefix name="bot-0.3.2" IRI="https://w3id.org/bot#"/>
+    <Import>http://www.w3.org/ns/ssn/</Import>
+    <Import>https://w3id.org/bot#</Import>
+    <Annotation>
+        <AnnotationProperty IRI="#status"/>
+        <Literal>work in progress</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal>A. Dimara, University of the Aegean, i-lab</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal>Ch. Anagnostopoulos, University of the Aegean, i-lab</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal>O. Eleftheriou, University of the Aegean, i-lab</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal>K. Kotis</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+        <Literal>CC0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+        <Literal>sec4dt</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+        <Literal>http://i-lab.aegean.gr/kotis/ontologies/sec4digit/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>SEC4DigiT (Saving Energy with Comfort for Digital Twins)  ontology
+
+Solution A: Imports BOT, SSN/SOSA (W3C ontologies) - Current solution (v1)
+
+Solution B: Imports SAREF/SAREF4ENRG/SAREF4BLDG (ETSI ontologies)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>SEC4DigiT ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>1.1.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AcousticComfort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comfort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalAsset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalLamp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalThermalComfort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalThermalComfortObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalThermostat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalTwin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalVisualComfort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalVisualComfortObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Humidity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Iluminance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndoorEnvironmentalQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalAsset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalLamp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalThermalComfort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalThermalComfortObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalThermostat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalTwin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalVisualComfort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalVisualComfortObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmartLamp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmartRoom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmartRoomIntelligentPlatform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmartRoomIntelligentSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmartThermostat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermalComfort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermalComfortObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VisualComfort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VisualComfortObservation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consistsOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAsset"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lampMode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lux"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#visualComfort"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#status"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AcousticComfort"/>
+        <Class IRI="#Comfort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comfort"/>
+        <Class IRI="#IndoorEnvironmentalQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DigitalAsset"/>
+        <Class IRI="#Asset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DigitalLamp"/>
+        <Class IRI="#DigitalTwin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DigitalRoom"/>
+        <Class IRI="#DigitalTwin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DigitalSensor"/>
+        <Class abbreviatedIRI="sosa:Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DigitalThermalComfort"/>
+        <Class IRI="#ThermalComfort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DigitalThermalComfortObservation"/>
+        <Class IRI="#ThermalComfortObservation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DigitalThermostat"/>
+        <Class IRI="#DigitalTwin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DigitalTwin"/>
+        <Class IRI="#DigitalAsset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DigitalTwin"/>
+        <Class abbreviatedIRI="sosa:FeatureOfInterest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DigitalTwin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAsset"/>
+            <Class IRI="#DigitalAsset"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DigitalVisualComfort"/>
+        <Class IRI="#VisualComfort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DigitalVisualComfortObservation"/>
+        <Class IRI="#VisualComfortObservation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Humidity"/>
+        <Class abbreviatedIRI="sosa:ObservableProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Iluminance"/>
+        <Class abbreviatedIRI="sosa:ObservableProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndoorEnvironmentalQuality"/>
+        <Class abbreviatedIRI="sosa:ObservableProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndoorEnvironmentalQuality"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#consistsOf"/>
+            <Class IRI="#AcousticComfort"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndoorEnvironmentalQuality"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#consistsOf"/>
+            <Class IRI="#ThermalComfort"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndoorEnvironmentalQuality"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#consistsOf"/>
+            <Class IRI="#VisualComfort"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalAsset"/>
+        <Class IRI="#Asset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalLamp"/>
+        <Class IRI="#PhysicalTwin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalRoom"/>
+        <Class IRI="#PhysicalTwin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalRoom"/>
+        <Class abbreviatedIRI="bot-0.3.2:Element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalRoom"/>
+        <Class abbreviatedIRI="bot-0.3.2:Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalSensor"/>
+        <Class abbreviatedIRI="sosa:Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalThermalComfort"/>
+        <Class IRI="#ThermalComfort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalThermalComfortObservation"/>
+        <Class IRI="#ThermalComfortObservation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalThermostat"/>
+        <Class IRI="#PhysicalTwin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalTwin"/>
+        <Class IRI="#PhysicalAsset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalTwin"/>
+        <Class abbreviatedIRI="sosa:FeatureOfInterest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalTwin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAsset"/>
+            <Class IRI="#PhysicalAsset"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalVisualComfort"/>
+        <Class IRI="#VisualComfort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalVisualComfortObservation"/>
+        <Class IRI="#VisualComfortObservation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmartLamp"/>
+        <Class IRI="#PhysicalLamp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmartRoom"/>
+        <Class IRI="#PhysicalRoom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmartRoom"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAsset"/>
+            <Class IRI="#SmartRoomIntelligentSystem"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmartRoomIntelligentPlatform"/>
+        <Class IRI="#DigitalAsset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmartRoomIntelligentPlatform"/>
+        <Class abbreviatedIRI="sosa:Platform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmartRoomIntelligentSystem"/>
+        <Class abbreviatedIRI="ssn:System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmartRoomIntelligentSystem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="ssn:deployedOnPlatform"/>
+            <Class IRI="#SmartRoomIntelligentPlatform"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmartThermostat"/>
+        <Class IRI="#PhysicalThermostat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temperature"/>
+        <Class abbreviatedIRI="sosa:ObservableProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermalComfort"/>
+        <Class IRI="#Comfort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermalComfortObservation"/>
+        <Class abbreviatedIRI="sosa:Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VisualComfort"/>
+        <Class IRI="#Comfort"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VisualComfortObservation"/>
+        <Class abbreviatedIRI="sosa:Observation"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AcousticComfort</IRI>
+        <Literal>Acoustic Comfort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Comfort</IRI>
+        <Literal>Indoor environmental contidions that most people feel comfortable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Comfort</IRI>
+        <Literal>Comfort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DigitalAsset</IRI>
+        <Literal>Digital Asset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DigitalLamp</IRI>
+        <Literal>Digital Lamp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DigitalRoom</IRI>
+        <Literal>Digital Room</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DigitalThermalComfort</IRI>
+        <Literal>Digital Thermal Comfort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DigitalThermalComfortObservation</IRI>
+        <Literal>Digital Thermal Comfort Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DigitalThermostat</IRI>
+        <Literal>Digital Thermostat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DigitalTwin</IRI>
+        <Literal>Digital Twin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DigitalVisualComfortObservation</IRI>
+        <Literal>Digital Visual Comfort Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Humidity</IRI>
+        <Literal>Humidity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Iluminance</IRI>
+        <Literal>Iluminance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IndoorEnvironmentalQuality</IRI>
+        <Literal>The most important observable properties related to building assets. IEQ consists of thermal, visual and acoustic comfort.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IndoorEnvironmentalQuality</IRI>
+        <Literal>Indoor Environmental Quality (IEQ)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalAsset</IRI>
+        <Literal>Physical Asset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalLamp</IRI>
+        <Literal>Physical Lamp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PhysicalRoom</IRI>
+        <Literal>An asset at the physical world (physical asset)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalRoom</IRI>
+        <Literal>Physical Room</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalSensor</IRI>
+        <Literal>Physical Sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalThermalComfort</IRI>
+        <Literal>Physical Thermal Comfort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalThermalComfortObservation</IRI>
+        <Literal>Physical Thermal Comfort Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalThermostat</IRI>
+        <Literal>Physical Thermostat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalTwin</IRI>
+        <Literal>Physical Twin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalVisualComfortObservation</IRI>
+        <Literal>Physical Visual Comfort Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SmartLamp</IRI>
+        <Literal>Smart Lamp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SmartRoom</IRI>
+        <Literal>Physical room with some intelligence (via sensing/actuating actions/tasks), with Smart Room Intelligent System deployed in it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SmartRoom</IRI>
+        <Literal>Smart Room</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SmartRoomIntelligentPlatform</IRI>
+        <Literal>Smart Room Intelligent Platform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SmartRoomIntelligentSystem</IRI>
+        <Literal>Smart Room Intelligent System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SmartThermostat</IRI>
+        <Literal>Smart Thermostat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Temperature</IRI>
+        <Literal>Temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ThermalComfort</IRI>
+        <Literal>Thermal Comfort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ThermalComfortObservation</IRI>
+        <Literal>Thermal Comfort Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VisualComfort</IRI>
+        <Literal>Visual Comfort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VisualComfortObservation</IRI>
+        <Literal>Visual Comfort Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#consistsOf</IRI>
+        <Literal>consists of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAsset</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAsset</IRI>
+        <Literal>has asset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lampMode</IRI>
+        <Literal>lamp mode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#visualComfort</IRI>
+        <Literal>visual comfort</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
