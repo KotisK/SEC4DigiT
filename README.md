@@ -4,6 +4,11 @@ Saving Energy with Comfort: A Semantic Digital Twin approach for Smart Buildings
 
 This demo visualizes thermal and visual comfort in digital twins.
 
+This work is presented in the ESWC2022 workshop paper:
+Third International Workshop On Semantic Digital Twins (SeDiT 2022), co-located with the 19th European Semantic
+Web Conference (ESWC 2022), Hersonissos, Greece - 29 May 2022
+URL: https://ceur-ws.org/Vol-3291/paper2.pdf
+
 ## Thermal Comfort Showcase
 ![Thermal Comfort gif showcase](GitHubAssets/ThermalComfortDemo.gif)
 
